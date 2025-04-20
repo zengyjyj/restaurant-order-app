@@ -1,0 +1,158 @@
+.panier-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+  }
+ 
+.champ-personnes {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+  }
+  
+ 
+  
+  .champ-personnes input {
+    width: 60px;
+    padding: 6px;
+    font-size: 1rem;
+    border-radius: 6px;
+    text-align: center;
+  }
+  
+  .bouillon-ligne {
+    display: flex;
+    align-items: center;  /* Centrer verticalement */
+    gap: 20px;            /* Espace entre les éléments */
+    flex-wrap: wrap;      /* Pour que ça soit réactif sur petits écrans */
+    margin: 20px 0;       /* Espacement vertical */
+  }
+  
+  .champ-personnes {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .alerte-bouillon {
+    color: red;
+    font-weight: bold;
+    margin: 0;             /* Supprimer les marges par défaut */
+    font-size: 0.9rem;
+  }
+  
+  
+  /* Lien de retour pour panier vide*/
+  .retour-menu-btn{
+    display: inline-block;
+    margin: 15px; 
+    padding: 10px 15px;
+    background-color: darkorange;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .panier-categorie-section {
+    margin-bottom: 20px;
+  }
+  /* Lien de retour pour categorie*/
+  .panier-categorie-lien {
+    display: inline-block; 
+    margin: 15px; 
+    padding: 8px 12px;
+    background-color: darkorange;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+
+  /*  des articles d'une categorie sont vides*/
+  .categorie-vide-texte {
+    font-style: italic;
+    color: #888;
+    margin-left: 10px;
+    margin: 0;
+  }
+  /* Grille des articles */
+  .panier-items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+  }
+   
+  /* Panier vide */
+  .panier-vide {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 1.1rem;
+  }
+
+  .panier-item {
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+  }
+  
+  .panier-item-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 8px;
+  }
+  
+ 
+  .panier-item-info h4 {
+    margin: 0.3rem 0 0.2rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+  }
+  .panier-item-info p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #444;
+  }
+  
+  
+  .quantite-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: center;
+  }
+  
+  .quantite-control button {
+    padding: 4px 12px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+ 
+  /* Total */
+  .panier-total {
+    text-align: right;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    border-top: 2px solid #ccc;
+    padding-top: 1rem;
+  }
+  

@@ -1,0 +1,13 @@
+/* src/pages/Home.css */
+.home-container {
+    height: 100vh;
+    background-image: url('../images/hotpot-backgound.jpg'); /* si dans public */
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 0 10px 5px grey(0, 0, 0, 0.7);
+  }
+  
